@@ -8,11 +8,14 @@ const App = () => {
     <div className="App">
       <Header />
       <main>
-        <h1>Welcome!</h1>
+        <h1>My Past Projects!</h1>
         <p>Add black box cover font then show</p>
-        {/* Move to cards component */}
         <Cards />
+        <h1>Hobbies</h1>
+        <h2>Music</h2>
+        <p>Japanese songs I've covered in English</p>
       </main>
+      {/* FOOTER */}
     </div>
   );
 };

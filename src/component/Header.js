@@ -13,6 +13,7 @@ const Header = () => {
         <Navitem title="About Me"></Navitem>
         <Navitem title="Projects"></Navitem>
         <Navitem title="Contact Me"></Navitem>
+        <Navitem title="Website Code"></Navitem>
       </Navbar>
       <div>Add github links and stuff here</div>
     </div>

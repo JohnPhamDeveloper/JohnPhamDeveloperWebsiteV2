@@ -1,0 +1,9 @@
+.navbar {
+  width: 500px;
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

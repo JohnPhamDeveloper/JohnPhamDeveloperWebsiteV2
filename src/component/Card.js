@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = ({ title }) => {
+const Card = ({ title, src, alt }) => {
   return (
     <div className="card">
       <h2>{title}</h2>
-      <div>Image here</div>
+      <img src={src} alt={alt}></img>
     </div>
   );
 };

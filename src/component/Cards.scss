@@ -1,17 +1,17 @@
 @import "../scss/variable.scss";
 
 .cards {
-  background-color: $off-white;
-  padding: 5rem;
+  background: radial-gradient(circle, rgba(245, 246, 253, 1) 0%, rgba(255, 255, 255, 1) 48%);
+  padding: 0rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border-radius: 20px;
 
   & > * {
     margin: 2rem;
-    border-radius: 30px;
 
     // REMOVE DEBUG
-    width: 300px;
-    height: 400px;
+    // width: 300px;
+    // height: 400px;
   }
 }

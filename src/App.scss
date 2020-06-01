@@ -67,7 +67,7 @@ body {
 
 .page-enter-active {
   opacity: 1;
-  transition: opacity 700ms;
+  transition: opacity 800ms ease-in;
 }
 
 .page-exit {
@@ -80,7 +80,7 @@ body {
 
 .page-exit-active {
   opacity: 0;
-  transition: opacity 700ms;
+  transition: opacity 800ms ease-in;
 }
 
 //

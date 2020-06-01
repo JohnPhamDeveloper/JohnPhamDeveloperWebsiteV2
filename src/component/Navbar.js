@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navitem from "./Navitem";
+
 import "./Navbar.scss";
 
-const Navbar = ({ children }) => {
+const Navbar = ({ className, ulClassName, children, onClick }) => {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">{children}</ul>
+    <nav className={`${className}`} onClick={onClick}>
+      <ul className={`${ulClassName}`}>{children}</ul>
     </nav>
   );
 };

@@ -26,7 +26,7 @@ html {
 body {
   background-color: $white;
   margin: 1rem;
-  padding: 8px 48px;
+  padding-bottom: 48px;
   border-radius: 10px;
   position: relative;
 
@@ -72,7 +72,10 @@ body {
 
 .page-exit {
   opacity: 1;
+  // Throw off screen
   position: absolute;
+  left: -10000px;
+  top: -10000px;
 }
 
 .page-exit-active {

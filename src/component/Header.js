@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import useScroll from "../useScroll";
 import "./Header.scss";
 import Navbar from "./Navbar";
 import Navitem from "./Navitem";
@@ -6,6 +7,29 @@ import logo from "../asset/logo.png";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const currentScrollYPosition = useScroll();
+  const headerRef = useRef(null);
+
+  // Sticky header move to new function
+  const isScrolledPastStickyElement = (stickyRef, currentScrollY) => {
+    if (stickyRef.current) {
+      const stickyRefBoundsY = stickyRef.current.getBoundingClientRect().top;
+      // console.log(`BOUND: ${stickyRefBoundsY}`);
+      return stickyRefBoundsY <= 0;
+    }
+
+    return false;
+  };
+
+  // If this element is scrolled past, insert the 'sticky' class name to trigger CSS code
+  const insertSticky = () => {
+    return isScrolledPastStickyElement(headerRef, currentScrollYPosition) ? "sticky" : "";
+  };
+
+  useEffect(() => {
+    if (isScrolledPastStickyElement(headerRef, currentScrollYPosition)) {
+    }
+  }, [currentScrollYPosition]);
 
   const getMenuActiveName = () => {
     if (menuActive) {
@@ -16,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className={`header ${insertSticky()}`} ref={headerRef}>
       <img className="header-logo" src={logo}></img>
       <Navbar>
         <Navitem title="About Me" to="/about-me"></Navitem>

@@ -10,7 +10,7 @@ const Main = () => {
 
   return (
     <TransitionGroup component={React.Fragment}>
-      <CSSTransition key={location.key} timeout={100} classNames="page" unmountOnExit>
+      <CSSTransition key={location.key} timeout={200} classNames="page" unmountOnExit>
         <Switch location={location}>
           <Route exact path="/about-me" component={AboutMe} />
           <Route exact path="/projects" component={Projects} />

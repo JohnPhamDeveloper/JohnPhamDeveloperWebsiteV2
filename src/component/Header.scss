@@ -9,13 +9,14 @@
   grid-template-columns: 1fr 3fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 20px;
   height: 150px;
   border-bottom: 1px solid #ececec;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 
   @media only screen and (max-width: 1300px) {
     grid-template-columns: 1fr 4fr 1fr;
-    margin-top: 0px;
   }
 
   &-logo {
@@ -50,4 +51,12 @@
       display: inline-block;
     }
   }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  // background-color: $off-white;
+  background-color: white;
 }

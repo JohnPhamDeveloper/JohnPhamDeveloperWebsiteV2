@@ -14,7 +14,7 @@ const Main = () => {
         <Switch location={location}>
           <Route exact path="/about-me" component={AboutMe} />
           <Route exact path="/projects" component={Projects} />
-          {/* <Route exact path="/contact-me" component={Contactme} /> */}
+          <Route exact path="/contact-me" component={Contactme} />
         </Switch>
       </CSSTransition>
     </TransitionGroup>

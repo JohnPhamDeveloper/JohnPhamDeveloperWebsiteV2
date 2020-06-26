@@ -26,6 +26,7 @@
     padding: 0px 40px;
   }
 
+  // LOGO
   &__logo {
     grid-area: logo;
     width: 170px;
@@ -35,9 +36,11 @@
     }
   }
 
+  // NAVBAR
   & .navbar {
     grid-area: navbar;
 
+    // NAVBAR MOBILE
     @media only screen and (max-width: 1300px) {
       margin-top: 1px;
       // padding: 50px 40px;
@@ -53,6 +56,7 @@
     }
   }
 
+  // GITHUB ICON
   & .github-icon {
     grid-area: github;
     width: 50px;
@@ -71,6 +75,7 @@
     }
   }
 
+  // HAMBURGER
   & .hamburger {
     display: none;
     grid-area: hamburger;

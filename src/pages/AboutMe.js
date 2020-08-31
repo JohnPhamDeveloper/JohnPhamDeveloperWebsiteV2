@@ -7,9 +7,18 @@ const AboutMe = () => {
     <main className="main-content">
       {/* Hobbies */}
       <article className="hobbies">
+        {/* About */}
+        <div className="main-content__title-box">
+          <h1 className="main-content__title">About</h1>
+        </div>
+        <p>
+          I'm an aspiring <strong>Web Developer</strong> & VR enthusiast who loves messing around with new technology! Even though my main focus is
+          web development, I have the capability to learn new skillsets required for different projects. Outside of that, I love composing music, sing
+          covers, guitar, bass, tennis, indie games, stylish clothes, and dance!
+        </p>
         {/* Title Box */}
         <div className="main-content__title-box">
-          <h1 className="main-content__title">Hobbies!</h1>
+          <h1 className="main-content__title">Hobbies</h1>
         </div>
         {/* Singing */}
         <section>
@@ -22,7 +31,7 @@ const AboutMe = () => {
         {/* Composing */}
         <section>
           <h2>Composing</h2>
-          <p>I also composed music in the past and played all the instruents in the song!</p>
+          <p>I also composed music in the past and played all the instruments in the song!</p>
           <AudioPlayer caption="Composed Song: " src="https://websitev2.s3-us-west-1.amazonaws.com/Compose1.wav" />
         </section>
       </article>

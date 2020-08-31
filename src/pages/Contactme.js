@@ -1,9 +1,12 @@
 import React from "react";
-import AudioPlayer from "../component/AudioPlayer";
 
-const AboutMe = () => {
+const ContactMe = () => {
   return (
     <main className="main-content">
+      {/* Title Box */}
+      <div className="main-content__title-box">
+        <h1 className="main-content__title">Contact Me</h1>
+      </div>
       {/* PERSON ICON FOR NAME */}
       <div>
         <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg">
@@ -30,4 +33,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default ContactMe;

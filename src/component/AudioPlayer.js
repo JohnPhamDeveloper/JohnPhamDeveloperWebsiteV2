@@ -1,4 +1,5 @@
 import React from "react";
+import "./AudioPlayer.scss";
 
 const AudioPlayer = ({ caption, src }) => {
   return (

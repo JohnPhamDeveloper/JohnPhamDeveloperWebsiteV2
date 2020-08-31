@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <main className="main-content">
       <div className="main-content__title-box">
-        <h1 className="main-content__title">My Past Projects!</h1>
+        <h1 className="main-content__title">My Past Projects</h1>
       </div>
 
       <Cards>

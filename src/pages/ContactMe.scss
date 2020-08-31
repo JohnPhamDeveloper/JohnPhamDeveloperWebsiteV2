@@ -1,0 +1,65 @@
+@import "../scss/variable.scss";
+
+.main-content {
+  & .contacts-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    & .contacts-info {
+      & > .svg-text:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      & .svg-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        & svg {
+          fill: $grey;
+          width: 25px;
+          margin-right: 8px;
+        }
+
+        & p {
+          color: $black;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $black;
+          border-bottom: 1px dotted;
+        }
+      }
+    }
+  }
+
+  & .social-media-block {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+
+    & > a:not(:first-child) {
+      margin-left: 25px;
+    }
+
+    & a {
+      & svg {
+        fill: $grey;
+        transition: 0.25s;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+          fill: $black;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

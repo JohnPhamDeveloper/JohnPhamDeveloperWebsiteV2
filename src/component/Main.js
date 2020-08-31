@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react
 import AboutMe from "../pages/AboutMe";
 import Projects from "../pages/Projects";
 import ContactMe from "../pages/ContactMe";
+import Skills from "../pages/Skills";
 
 const Main = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const Main = () => {
           <Route exact path="/about-me" component={AboutMe} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact-me" component={ContactMe} />
+          <Route exact path="/skills" component={Skills} />
         </Switch>
       </CSSTransition>
     </TransitionGroup>

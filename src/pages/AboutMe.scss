@@ -1,12 +1,14 @@
 @import "../scss/variable.scss";
 
-.hobbies {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 
-  & > section {
+  x & > section {
     margin-top: 20px;
   }
 }

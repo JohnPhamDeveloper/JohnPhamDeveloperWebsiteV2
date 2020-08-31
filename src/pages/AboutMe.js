@@ -5,16 +5,15 @@ import "./AboutMe.scss";
 const AboutMe = () => {
   return (
     <main className="main-content">
-      {/* Hobbies */}
-      <article className="hobbies">
-        {/* About */}
+      {/* About */}
+      <article className="about">
         <div className="main-content__title-box">
           <h1 className="main-content__title">About</h1>
         </div>
         <p>
           I'm an aspiring <strong>Web Developer</strong> & VR enthusiast who loves messing around with new technology! Even though my main focus is
-          web development, I have the capability to learn new skillsets required for different projects. Outside of that, I love composing music, sing
-          covers, guitar, bass, tennis, indie games, stylish clothes, and dance!
+          web development, I have the capability to learn new skill sets required for different projects. Outside of that, I love composing music,
+          singing covers, guitar, bass, tennis, indie games, stylish clothing, weightlifting, photography, and dance!
         </p>
         {/* Title Box */}
         <div className="main-content__title-box">

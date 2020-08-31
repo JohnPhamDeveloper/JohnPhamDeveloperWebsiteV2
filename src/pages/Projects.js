@@ -1,7 +1,10 @@
 import React from "react";
 import Cards from "../component/Cards";
 import Card from "../component/Card";
-import testImage from "../asset/logo.png";
+import gameImage from "../asset/game.png";
+import photographyImage from "../asset/len.png";
+import appImage from "../asset/cosplay.png";
+import "./Projects.scss";
 
 const Projects = () => {
   return (
@@ -12,16 +15,24 @@ const Projects = () => {
 
       <Cards>
         <Card
-          title="Project 1"
-          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8d2f8269-4ed2-4c48-820e-3d57ca7c7686/dcx1muk-81a31f37-fcb0-48f7-88a8-dfae36801ec8.png/v1/fill/w_1192,h_670,q_70,strp/say_it___yorushika_by_skyfang2414_dcx1muk-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDgwIiwicGF0aCI6IlwvZlwvOGQyZjgyNjktNGVkMi00YzQ4LTgyMGUtM2Q1N2NhN2M3Njg2XC9kY3gxbXVrLTgxYTMxZjM3LWZjYjAtNDhmNy04OGE4LWRmYWUzNjgwMWVjOC5wbmciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.AHtQ_bl8ZIz-mfS37M4f-Pt9sbT9Vnx3RsyI8ixIaNE"
-          alt="alt text"
+          title="Convention Mobile App"
+          src={appImage}
+          alt="Convention mobile app project"
+          href="https://github.com/JohnPhamDeveloper/Convention_app"
         />
         <Card
-          title="Project 2"
-          src="https://1.bp.blogspot.com/-v51mi-IOosM/XUxgEfSYh7I/AAAAAAAABGA/WeFMa4C6TcY7TtC3tZd4xiJIppW1jkh7QCLcBGAs/s1600/Yorushika%2B-%2Bame%2Bto%2Bcappucino.jpg"
-          alt="alt text"
+          title="Photographer Website"
+          src={photographyImage}
+          alt="Photographer website Project"
+          href="https://github.com/JohnPhamDeveloper/Convention_app"
         />
-        <Card title="Project 3" src="https://miro.medium.com/max/3840/1*bKlVmOGRWFqiKYuK_0kCxw.png" alt="alt text" />
+        <Card
+          title="Pixel Shooter"
+          src={gameImage}
+          alt="Pixel shooter game project"
+          href="https://simmer.io/@JohnPhamDev/~b9700b43-3bfb-6c88-7598-a8ac2ca19098"
+        />
+        {/*  */}
       </Cards>
     </main>
   );

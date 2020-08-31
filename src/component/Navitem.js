@@ -19,9 +19,16 @@ const Navitem = ({ title, to }) => {
   //     .to("body", 0.8, { ease: Power1.easeInOut, height: "1000px" })
   //     .to(bodyAfter, 0.5, { ease: Power1.easeInOut, opacity: 1 });
   // };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 150
+      // behavior: 'smooth'
+    });
+  };
   return (
     <li>
-      <Link to={to}>
+      <Link to={to} onClick={scrollToTop}>
         <div className="nav-item">
           <p className="nav-item__title">{title}</p>
           <div className="nav-item__line" />

@@ -8,7 +8,11 @@
   padding-left: 100px;
   padding-right: 100px;
 
-  x & > section {
-    margin-top: 20px;
+  & > .main-content__title-box:not(:first-child) {
+    margin-top: 100px;
+  }
+
+  & > section:not(:first-child) {
+    margin-bottom: 20px;
   }
 }

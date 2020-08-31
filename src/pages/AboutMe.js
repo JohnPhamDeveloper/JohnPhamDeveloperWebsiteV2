@@ -5,8 +5,8 @@ import "./AboutMe.scss";
 const AboutMe = () => {
   return (
     <main className="main-content">
-      {/* About */}
       <article className="about">
+        {/* About */}
         <div className="main-content__title-box">
           <h1 className="main-content__title">About</h1>
         </div>
@@ -15,7 +15,7 @@ const AboutMe = () => {
           web development, I have the capability to learn new skill sets required for different projects. Outside of that, I love composing music,
           singing covers, guitar, bass, tennis, indie games, stylish clothing, weightlifting, photography, and dance!
         </p>
-        {/* Title Box */}
+        {/* Hobbies */}
         <div className="main-content__title-box">
           <h1 className="main-content__title">Hobbies</h1>
         </div>

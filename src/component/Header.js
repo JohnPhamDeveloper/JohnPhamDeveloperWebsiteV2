@@ -46,6 +46,7 @@ const Header = () => {
 
   // Toggle mobile dropdown
   const getMenuActiveName = () => {
+    console.log(menuActive);
     if (menuActive) {
       return "is-active";
     }
@@ -65,11 +66,7 @@ const Header = () => {
         <img className="header__logo" src={logo} alt="Website logo" />
 
         {/* NAVBAR*/}
-        <Navbar
-          className={`navbar navbar--${insertMobileNavbarModifier()} navbar--${getMenuActiveName()}`}
-          ulClassName="navbar-list"
-          onClick={handleNavClick}
-        >
+        <Navbar className={`navbar navbar--${getMenuActiveName()}`} ulClassName="navbar-list" onClick={handleNavClick}>
           <Navitem title="About Me" to="/about-me"></Navitem>
           <Navitem title="Projects" to="/projects"></Navitem>
           <Navitem title="Skills" to="/skills"></Navitem>

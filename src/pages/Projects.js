@@ -27,7 +27,7 @@ const Projects = () => {
             title="Photographer Website"
             src={photographyImage}
             alt="Photographer website Project"
-            href="https://github.com/JohnPhamDeveloper/Convention_app"
+            href="https://github.com/JohnPhamDeveloper/helenphotography"
           />
           <Card
             className="card__project--3"

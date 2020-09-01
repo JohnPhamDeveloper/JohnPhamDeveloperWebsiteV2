@@ -1,27 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TweenLite, TimelineLite, Power1, CSSRulePlugin } from "gsap/all";
+import useWindowSize from "../useWindowSize";
 import "./Navitem.scss";
 
 const Navitem = ({ title, to, isLink = true }) => {
-  // const animateHeaderUp = () => {
-  //   // App.scss has animation delay, so we bring it up...
-  //   // Then drop it back down
-  //   // -webkit-box-shadow: 23px 24px 43px -11px rgba(92, 92, 92, 0.25);
-  //   // -moz-box-shadow: 23px 24px 43px -11px rgba(92, 92, 92, 0.25);
-  //   // box-shadow: 23px 24px 43px -11px rgba(92, 92, 92, 0.25);
-  //   // Use rule here since we want psuedoelement to reduce boxshadow lag animation
-  //   const bodyAfter = CSSRulePlugin.getRule("body:after");
-  //   const timeline = new TimelineLite();
-  //   timeline
-  //     .to(bodyAfter, 0.5, { ease: Power1.easeInOut, opacity: 0 })
-  //     .to("body", 0.8, { ease: Power1.easeInOut, height: "200px" })
-  //     .to("body", 0.8, { ease: Power1.easeInOut, height: "1000px" })
-  //     .to(bodyAfter, 0.5, { ease: Power1.easeInOut, opacity: 1 });
-  // };
+  const size = useWindowSize();
 
   const scrollToTop = () => {
-    window.scrollTo(0, 110);
+    if (size.width <= 600) {
+      window.scrollTo(0, 0);
+    } else if (size.width <= 750) {
+      window.scrollTo(0, 20);
+    } else {
+      window.scrollTo(0, 110);
+    }
   };
 
   const renderLink = () => {

@@ -17,6 +17,7 @@ const Main = () => {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact-me" component={ContactMe} />
           <Route exact path="/skills" component={Skills} />
+          <Route component={AboutMe} />
         </Switch>
       </CSSTransition>
     </TransitionGroup>

@@ -38,7 +38,7 @@ const Navitem = ({ title, to, isLink = true }) => {
   // Button that does not switch route
   const renderNonLink = () => {
     return (
-      <a href="https://websitev2.s3-us-west-1.amazonaws.com/resumeWebsite.pdf" target="_blank" className="link">
+      <a href="https://websitev2.s3-us-west-1.amazonaws.com/resumeWebsite.pdf" rel="noreferrer" target="_blank" aria-label="Resume" className="link">
         <div className="nav-item">
           <p className="nav-item__title">{title}</p>
           <div className="nav-item__line" />

@@ -11,9 +11,9 @@ const AboutMe = () => {
           <h1 className="main-content__title">About</h1>
         </div>
         <p>
-          I'm an aspiring <strong>Web Developer</strong> & VR enthusiast who loves messing around with new technology! Even though my main focus is
-          web development, I have the capability to learn new skill sets required for different projects. Outside of that, I love composing music,
-          singing covers, guitar, bass, tennis, indie games, stylish clothing, weightlifting, photography, and dance!
+          I'm an aspiring Web Developer & VR enthusiast who loves messing around with new technology! Even though my main focus is web development, I
+          have the capability to learn new skill sets required for different projects. Outside of that, I love composing music, singing covers,
+          guitar, bass, tennis, indie games, stylish clothing, weightlifting, photography, and dance!
         </p>
         {/* Hobbies */}
         <div className="main-content__title-box">

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Navitem from "./Navitem";
+import React from "react";
 
 import "./Navbar.scss";
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const getScrollPosition = ({ element, useWindow }) => {
   const target = element ? element.current : document.body;

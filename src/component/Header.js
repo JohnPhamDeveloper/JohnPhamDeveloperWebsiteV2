@@ -46,7 +46,7 @@ const Header = () => {
 
   // Toggle mobile dropdown
   const getMenuActiveName = () => {
-    console.log(menuActive);
+    // console.log(menuActive);
     if (menuActive) {
       return "is-active";
     }
@@ -85,13 +85,13 @@ const Header = () => {
 
         {/* Hamburger */}
         <button
-          class={`hamburger hamburger--elastic ${getMenuActiveName()}`}
+          className={`hamburger hamburger--elastic ${getMenuActiveName()}`}
           aria-label="Menu button"
           type="button"
           onClick={() => setMenuActive(!menuActive)}
         >
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
           </span>
         </button>
       </div>

@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useWindowSize from "../useWindowSize";
+// import useWindowSize from "../useWindowSize";
 import "./Navitem.scss";
 
 const Navitem = ({ title, to, isLink = true }) => {
-  const size = useWindowSize();
+  // const size = useWindowSize();
 
   const scrollToTop = () => {
-    if (size.width <= 600) {
-      window.scrollTo(0, 0);
-    } else if (size.width <= 750) {
-      window.scrollTo(0, 20);
-    } else {
-      window.scrollTo(0, 110);
-    }
+    // if (size.width <= 600) {
+    //   window.scrollTo(0, 0);
+    // } else if (size.width <= 750) {
+    //   window.scrollTo(0, 20);
+    // } else {
+    //   window.scrollTo(0, 110);
+    // }
+    window.scrollTo(0, 0);
   };
 
   const renderLink = () => {

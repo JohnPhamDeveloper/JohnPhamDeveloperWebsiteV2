@@ -30,7 +30,7 @@ const AboutMe = () => {
         {/* Composing */}
         <section>
           <h2>Composing</h2>
-          <p>I also composed music in the past and played all the instruments in the song!</p>
+          <p>I also composed music in the past and played all the instruments in this song!</p>
           <AudioPlayer caption="Composed Song: " src="https://websitev2.s3-us-west-1.amazonaws.com/Compose1.wav" />
         </section>
       </article>

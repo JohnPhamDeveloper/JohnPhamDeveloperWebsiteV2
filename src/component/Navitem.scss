@@ -32,3 +32,15 @@
     color: $black;
   }
 }
+
+.link {
+  padding: 0;
+  border: none;
+  background: none;
+
+  & .nav-item {
+    p {
+      color: red;
+    }
+  }
+}

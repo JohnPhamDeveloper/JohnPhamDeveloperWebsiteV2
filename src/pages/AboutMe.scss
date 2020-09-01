@@ -5,14 +5,23 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  //width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    padding: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   & > .main-content__title-box:not(:first-child) {
     margin-top: 100px;
   }
 
   & > section:not(:first-child) {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
   }
 }

@@ -2,4 +2,8 @@ figure {
   & figcaption {
     margin-bottom: 1px;
   }
+
+  & audio {
+    width: 100%;
+  }
 }

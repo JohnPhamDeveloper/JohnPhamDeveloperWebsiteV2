@@ -1,18 +1,28 @@
 @import "../scss/variable.scss";
 
-.main-content {
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   & .skill-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & h2 {
+      text-align: center;
+    }
+
     & .skill-list {
       & ul {
         display: flex;
@@ -22,7 +32,7 @@
         align-items: center;
         & li {
           text-align: center;
-          width: 30%;
+          width: 100px;
           margin-bottom: 10px;
           color: $grey;
         }

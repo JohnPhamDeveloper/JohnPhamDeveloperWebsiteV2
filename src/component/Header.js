@@ -70,10 +70,11 @@ const Header = () => {
           ulClassName="navbar-list"
           onClick={handleNavClick}
         >
+          <Navitem title="Resume" isLink={false}></Navitem>
           <Navitem title="About Me" to="/about-me"></Navitem>
           <Navitem title="Projects" to="/projects"></Navitem>
-          <Navitem title="Contact Me" to="/contact-me"></Navitem>
           <Navitem title="Skills" to="/skills"></Navitem>
+          <Navitem title="Contact Me" to="/contact-me"></Navitem>
           {/* Need GitHub logo in the nav? */}
         </Navbar>
 
